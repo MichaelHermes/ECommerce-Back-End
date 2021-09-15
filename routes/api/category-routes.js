@@ -53,8 +53,7 @@ router.delete("/:id", async ({ params }, res) => {
 			where: { id: params.id },
 		});
 		if (!categoryData) {
-			res.status(404).json({ message: "No category with this id!" });
-			return;
+			return res.status(404).json({ message: "No category with this id!" });
 		}
 		res.status(200).json(categoryData);
 	} catch (err) {

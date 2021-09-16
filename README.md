@@ -60,7 +60,7 @@ Run `npm i` with the included `packages.json` file to install the required packa
 To create the schema and seed the tables, execute the following commands:
 
 - Connect to MySQL shell and run `SOURCE db/schema.sql` to create the database schema
-- Run `node server.js` to start the server
+- Run `node server.js` to start the server and sync the Sequelize models to the MySQL database
 - Run `node seeds/index.js` to seed the tables
 
 ### REST API
